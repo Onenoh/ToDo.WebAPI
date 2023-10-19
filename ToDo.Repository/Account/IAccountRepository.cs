@@ -12,6 +12,6 @@ namespace ToDo.Repository.Account
     public interface IAccountRepository
     {
         public Task<IdentityResult> CreateAsync(ApplicationUserIdentity user, CancellationToken cancellationToken);
-        public Task<ApplicationUserIdentity> GetbYUsernameAsync(string normalizedUsername, CancellationToken cancellationToken);
+        public Task<ApplicationUserIdentity> GetByUsernameAsync(string normalizedUsername, CancellationToken cancellationToken);
     }
 }
